@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Booking System</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Booking System</h1>
+
+      <!-- CREATE BOOKING -->
+      <section class="card">
+        <h2>Create Booking</h2>
+
+        <form id="bookingForm">
+          <div class="form-group">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" required />
+          </div>
+
+          <div class="form-group">
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" required />
+          </div>
+
+          <div class="form-group">
+            <label for="dob">DOB:</label>
+            <input type="date" id="dob" required />
+          </div>
+
+          <button type="submit">Submit</button>
+        </form>
+
+        <div id="submitResult" class="result hidden">
+          <h3>Booking Saved!</h3>
+
+          <p>Your confirmation number is:</p>
+
+          <strong id="confirmationResult"></strong>
+        </div>
+      </section>
+
+      <!-- RETRIEVE BOOKING -->
+      <section class="card">
+        <h2>Retrieve Booking</h2>
+
+        <div class="form-group">
+          <label for="confirmation"> Confirmation: </label>
+
+          <input
+            type="text"
+            id="confirmation"
+            placeholder="Enter confirmation number"
+          />
+        </div>
+
+        <button type="button" id="fetchButton">Fetch</button>
+
+        <div id="fetchResult" class="result hidden">
+          <h3>Booking Information</h3>
+
+          <p>
+            <strong>Confirmation:</strong>
+            <span id="fetchConfirmation"></span>
+          </p>
+
+          <p>
+            <strong>First Name:</strong>
+            <span id="fetchFirstName"></span>
+          </p>
+
+          <p>
+            <strong>Last Name:</strong>
+            <span id="fetchLastName"></span>
+          </p>
+
+          <p>
+            <strong>DOB:</strong>
+            <span id="fetchDob"></span>
+          </p>
+        </div>
+
+        <div id="errorMessage" class="error hidden"></div>
+      </section>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
