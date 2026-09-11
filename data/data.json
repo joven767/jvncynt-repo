@@ -3,9 +3,4 @@
   "firstName" : "test",
   "lastName" : "name",
   "dob" : "2011-06-08"
-}, {
-  "confirmation" : "189374F8",
-  "firstName" : "Irika",
-  "lastName" : "Paran",
-  "dob" : "2000-08-13"
-} ]
+}]
