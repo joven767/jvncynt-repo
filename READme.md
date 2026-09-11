@@ -1,3 +1,3 @@
 # Git in VS code
 
-Let's get started now hehehe
+For now eto muna! check out the update guys!!
